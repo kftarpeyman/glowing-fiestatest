@@ -1,8 +1,7 @@
-name: FirstStep
-
+name: start
 on:
-  workflow_dispatch:
-
+  repository_dispatch:
+    types: [starting]
 jobs:
 
   build:
@@ -22,3 +21,4 @@ jobs:
       
       - name: Run
         run: bash start.sh
+
